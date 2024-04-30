@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  color: white;
+}
+
+body {
+  font-family: poppins;
+  background-color: rgba(5, 46, 69, 0.877);
+}
+body main {
+  position: absolute;
+  left: calc(50% - 10.8em);
+  top: 20%;
+  box-shadow: rgba(0, 0, 0, 0.26) 0px 4px 12px;
+  border-radius: 3em 3em 1.5em 1.5em;
+  padding-bottom: 30px;
+  background-color: rgba(11, 110, 132, 0.514);
+}
+body .title {
+  text-align: center;
+  padding: 40px 100px 40px 100px;
+  background-color: rgba(58, 182, 206, 0.744);
+  color: white;
+  font-weight: 400;
+  border-radius: 1.5em 1.5em 0em 0em;
+}
+body #todo-input {
+  border: 0.2em double lightgray;
+  width: 21em;
+  height: 2.5vh;
+  text-indent: 1em;
+  color: black;
+}
+body .addTaskB {
+  border: none;
+  color: grey;
+}
+body .addTaskB:hover {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+body ul {
+  margin-top: 2em;
+  list-style: circle;
+  list-style-type: rgba(58, 182, 206, 0.744);
+}
+body li {
+  margin-bottom: 0.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body li::marker {
+  color: rgba(58, 182, 206, 0.744);
+}
+body #checkbox {
+  position: absolute;
+  margin: 0em 0em 0em 15em;
+  accent-color: rgba(58, 182, 206, 0.744);
+}
+body #checkbox:hover {
+  cursor: pointer;
+}
+body #deletebutton {
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  position: absolute;
+  margin: 0.1em 0em 0em 18em;
+  width: 5.4em;
+  border-radius: 1.5em;
+}
+body #deletebutton:hover {
+  cursor: pointer;
+  color: rgba(58, 182, 206, 0.744);
+}
+
+@media screen and (min-device-width: 480px) {
+  .addTaskB {
+    height: 3.15vh;
+  }
+}
+@media screen and (min-device-width: 768px) {
+  .addTaskB {
+    height: 3.5vh;
+  }
+}/*# sourceMappingURL=style.css.map */

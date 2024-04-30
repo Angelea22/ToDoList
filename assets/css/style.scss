@@ -1,0 +1,108 @@
+$abs: absolute;
+$border: 0.2em double lightgray;
+$cursor: pointer;
+$primaryColor: rgba(58, 182, 206, 0.744);
+
+* {
+    // width: 100%;
+    margin: 0;
+    color: white;
+}
+
+body {
+    font-family: poppins;
+    background-color: rgba(5, 46, 69, 0.877);
+
+    
+
+    main {
+        position: $abs;
+        left: calc(50% - 10.8em);
+        top: calc(20%);
+        box-shadow: rgba(0, 0, 0, 0.26) 0px 4px 12px;
+        border-radius: 3em 3em 1.5em 1.5em;
+        padding-bottom: 30px;
+        background-color: rgba(11, 110, 132, 0.514);
+    }
+
+    .title {
+    text-align: center;
+    padding: 40px 100px 40px 100px;
+    background-color: $primaryColor;
+    color: white;
+    font-weight: 400;
+    border-radius: 1.5em 1.5em 0em 0em;
+   
+}
+
+    #todo-input {
+    border: $border;
+    width: 21em;
+    height: 2.5vh;
+    text-indent: 1em;
+    color: black;
+}
+
+    .addTaskB {
+        border: none;
+        color: grey;
+        &:hover {
+            cursor: $cursor;
+            background-color: black;
+            color: white;
+        }
+    }
+
+    ul {
+        margin-top: 2em;
+        list-style: circle;
+        list-style-type: $primaryColor;
+    }
+
+    li {
+        margin-bottom: 0.5em;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+    &::marker {
+        color: $primaryColor;
+    }
+}
+
+    #checkbox {
+        position: $abs;
+        margin: 0em 0em 0em 15em;
+        accent-color: $primaryColor;
+
+        &:hover {
+            cursor: $cursor;
+        }
+    }
+
+    #deletebutton {
+        border: none;
+        background-color: rgba(0, 0, 0, 0);
+        position: $abs;
+        margin: 0.1em 0em 0em 18em;
+        width: 5.4em;
+        border-radius: 1.5em;
+
+        &:hover {
+            cursor: $cursor;
+            color: $primaryColor;
+        }
+    }
+}
+
+@media screen and (min-device-width: 480px) {
+    .addTaskB {
+        height: 3.15vh;
+    }
+}
+
+@media screen and (min-device-width: 768px) {
+    .addTaskB {
+        height: 3.5vh;
+    }
+}
